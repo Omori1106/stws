@@ -1,0 +1,91 @@
+body{
+  margin:0;
+      background-image:url("dotori.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    a:link.click{
+      color: lightcoral;
+      text-decoration: none;
+    }
+    a:visited.click{
+      color: lightcoral;
+      text-decoration: none;
+    }
+    a:hover.click{
+      color: #ffa98f;
+      text-decoration: none;
+    }
+    .click{
+      text-shadow: -1px 0 #F2F1F6, 0 1px #F2F1F6, 1px 0 #F2F1F6, 0 -1px #F2F1F6;
+    }
+    a:link.mail{
+      color: black;
+    }
+    a:visited.mail{
+      color: black;
+    }
+    a:hover.mail{
+      color: black;
+    }
+    a:link.gomain{
+      color: #4374d9;
+      text-decoration: none;
+    }
+    a:visited.gomain{
+      color: #4374d9;
+      text-decoration: none;
+    }
+    a:hover.gomain{
+      color: #5adcf3;
+      text-decoration: none;
+    }
+    .mean{
+      font-family: 'Poor Story', cursive;
+    }
+    .treemean{
+      font-family: 'Jua', cursive;
+    }
+.sun{
+  border-top: 1px solid white;
+  margin:5px;
+}
+ footer{
+   text-align: center;
+   font-family: 'Poor Story',cursive;
+ }
+ #stwslogo{
+   margin-top: 5%;
+ }
+
+.menu1{
+  font-family: 'Staatliches', cursive;
+  font-size: 50px;
+}
+.Jua{
+  font-family: 'Jua', cursive;
+}
+@font-face{
+    font-family: 'pastpicture4';
+    src: url(font/a옛날사진관4.ttf);
+}
+@font-face{
+    font-family: 'pastpicture2';
+    src: url(font/a옛날사진관2.ttf);
+}
+@font-face{
+    font-family: 'baekgoo';
+    src: url(font/a시월구일1.ttf);
+}
+.head{
+  font-family: 'pastpicture2',cursive;
+}
+
+#result1{
+  font-family: 'pastpicture4',cursive;
+}
+#result2{
+  font-family: 'pastpicture4',cursive;
+}

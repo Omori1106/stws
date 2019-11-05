@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STWS - # Baseball</title>
+    <link rel="stylesheet" href="tree/style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Poor+Story|Yeon+Sung|Nanum+Gothic|Staatliches|Sawarabi+Gothic" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136329220-1"></script>
+<script type="text/javascript">
+
+ function printTime() {
+ 		var clock = document.getElementById("clock");
+ 		//id값인 <span>태그를 변수clock에 저장
+ 		var now = new Date();
+ 		//객체 생성
+
+ 		clock.innerHTML =
+ 			//태그내부에 태그 설정
+ 		now.getFullYear() + "년 " +
+ 		(now.getMonth() + 1) + "월 " +
+ 		now.getDate() + "일 " +
+ 		now.getHours() + "시 " +
+ 		now.getMinutes() + "분 " +
+ 		now.getSeconds() + "초";
+ 		setTimeout("printTime()", 1000);
+ 		//1초마다 printTime()함수 호출
+ 	}
+ 	window.onload = function() { //html 로딩시 콜백함수 호출
+ 		printTime();
+ 	}
+
+ </script>
+</head>
+  <body>
+    <header>
+       <a href="baseball.html"><img class='toplogo' src="stwstreeyagu.png" width=250px ></a>
+         <div id="navi" class="nav">
+         </strong><a href="baseball/calc.html"><span>#스텟_계산기</span></a>
+           <a href="baseball/weather.html"><span>#야구장_날씨</span></a>
+           <a href="baseball/premier12.html"><span>#프리미어_12</span></a>
+           <a href="#"><span>#기타_페이지</span></a>
+           <a href="index.html"><span>#STWS_메인</span></a>
+           <span></span>
+         </div>
+         <nav>
+         <i class="xi-bars xi-2x" style="color:dimgray; padding-top:5px;padding-right:1%;" onclick="view()">
+       </i>
+      <script>
+      function view(){
+        if(navi.style.display=="none"){
+          navi.style.display="flex";
+          navi.style.justifyContent="space-between";
+          navi.style.width="800px";
+        }
+        else{
+          navi.style.display="none";
+        }
+      }
+      </script>
+      </nav>
+    </header>
+    <div class=topdiv></div>
+    <div id=menu>
+    <div style="display:flex; justify-content:space-around; flex-wrap: wrap; text-align:center;">
+      <script>
+      function move(){
+        location.href="baseball/calc.html";
+      }
+      </script>
+    <div class=square onclick="move()" style="cursor:pointer;">
+    <img src="calc.png" align="left" width=20% vspace="35" style=" margin-left:5%; padding-right:5%;">
+  <div class=title><h2>야구 스텟 계산기</h2></div><div class=sogae style="padding-right:5%;">
+    타율, ERA, BB/K 등 야구의 여러 비율 스텟을 계산할 수 있는 웹 계산기 페이지입니다.
+</div></div>
+
+      <script>
+      function move1(){
+        location.href="baseball/weather.html";
+      }
+      </script>
+      <div class=square1 onclick="move1()" style="cursor:pointer;">
+    <img src="weather.png" align="left" width=20% style=" margin-left:5%; padding-right:5%; margin-top:35px;">
+  <div class=title><h2>오늘의 야구장 날씨</h2></div><div class=sogae style="padding-right:5%;">KBO 9개 구장의 오늘 날씨를 알려주는 웹 페이지입니다.
+  </div>
+</div></div>
+  <center><img id="plate" src="plate.png" width=10% style="margin-top:2%"></center>
+  <div style="display:flex; justify-content:space-around; flex-wrap: wrap; text-align:center;">
+    <script>
+    function move2(){
+      location.href="baseball/premier12.html";
+    }
+    </script>
+    <div class=square2 onclick="move2()" style="cursor:pointer;">
+    <img src="premier.svg" align="left" vspace="30" width=30% style="margin-left:5%; padding-right:5%; max-width:100%; max-height:100%;">
+  <div class=title><h2>2019 프리미어12</h2></div><div class=sogae style="padding-right:5%;">2019년 WBSC 프리미어 12와 관련된 비공식 웹 페이지입니다.
+  </div></a></div>
+  <script>
+  function move3(){
+    location.href="baseball/etc.html";
+  }
+  </script>
+    <div class=square3 onclick="move3()" style="cursor:pointer;">
+    <img src="guitar.png" align="left" width=20% vspace="30" style=" margin-left:5%; padding-right:5%;">
+  <div class=title><h2>기타 메뉴</h2></div><div class=sogae style="padding-right:5%;">기타 야구 관련 잡다한 내용들을 모은 웹 페이지입니다.</div>
+  </div>
+</div>
+    <center>
+    <div class=mean>
+      <br><br><br><h3>
+        🕐 Current Time:
+        <span id="clock"></span>
+        <br>🌐 STWS Version: Beta 0.1</h3>
+      </center>
+    </p>
+<footer>
+    <hr width=50%>Copyright 2019. <strong>omori</strong> all right reserved.
+    <br>Contact : <a href="mailto:smart_tomy@naver.com" class='mail'>smart_tomy@naver.com</a>
+  </center>
+  </div>
+</footer>
+    </center>
+  </body>
+</html>

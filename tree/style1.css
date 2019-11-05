@@ -1,0 +1,354 @@
+body{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: white;
+}
+ a:link.click{
+      color: #de691e;
+      text-decoration: none;
+    }
+    a:visited.click{
+      color: #de691e;
+      text-decoration: none;
+    }
+    a:hover.click{
+      color: #ffa98f;
+      text-decoration: none;
+    }
+    a:link.mail{
+      color: black;
+    }
+    a:visited.mail{
+      color: black;
+    }
+    a:hover.mail{
+      color: black;
+    }
+    a:link.gomain{
+      color: #4374d9;
+      text-decoration: none;
+    }
+    a:visited.gomain{
+      color: #4374d9;
+      text-decoration: none;
+    }
+    a:hover.gomain{
+      color: #5adcf3;
+      text-decoration: none;
+    }
+    a:link.none{
+      color: black;
+      text-decoration: none;
+    }
+    a:visited.none{
+      color: black;
+      text-decoration: none;
+    }
+    a:hover.none{
+      color: black;
+      text-decoration: none;
+    }
+    a{
+      text-decoration: none;
+    }
+    .nav a:hover{
+      color:black;
+      transition: .35s;
+    }
+    a:link.change{
+      color: black;
+      text-decoration: none;
+    }
+    a:visited.change{
+      color: black;
+      text-decoration: none;
+    }
+    a:hover.change{
+      color: hotpink;
+      text-decoration: none;
+    }
+    .mean{
+      font-family: 'Poor Story', cursive;
+    }
+    .treemean{
+      font-family: 'Jua', cursive;
+    }
+.sun{
+  border-top: 1px solid white;
+  margin:5px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  background-color: white;
+  top:0px;
+  left:0px;
+  right:0;
+  border-bottom: 1px solid lightgrey;
+  font-family: 'baekgoo',cursive;
+  font-size: 20px;
+  width:100%;
+  z-index:999;
+  position:fixed;
+  box-shadow: 0 .5px 2px 0 #777;
+}
+header img{
+  padding-left: 8px;
+}
+header .nav{
+  width:800px;
+  display: flex;
+  position: relative;
+
+}
+header .nav a{
+  flex:1; display: block; text-align: center;
+  height:60px; line-height: 50px;
+  color: #8f8f8f;
+}
+header .nav a.on{
+  color: black;
+}
+header .nav > span{
+  position: absolute; height:3px;
+  background: lightskyblue; left:0; bottom:0; width: 160px;
+  opacity: 0;
+  transition: all .5s;
+}
+header .nav a:nth-child(1).on ~ span{
+  left:0; opacity: 1;
+}
+header .nav a:nth-child(2).on ~ span{
+  left:160px; opacity: 1;
+}
+header .nav a:nth-child(3).on ~ span{
+  left:320px; opacity: 1;
+}
+header .nav a:nth-child(4).on ~ span{
+  left:480px; opacity: 1;
+}
+header .nav a:nth-child(5).on ~ span{
+  left:640px; opacity: 1;
+}
+.topdiv{
+  height:70px;
+}
+
+nav{
+  width: 41.5px;
+  display:none;
+}
+
+ footer{
+   text-align: center;
+   font-family: 'Poor Story',cursive;
+ }
+ #menu{
+   font-family: 'Nanum Gothic',cursive;
+ }
+ #stwslogo{
+   margin-top: 5%;
+ }
+
+.toplogo{
+  margin-left:0%;
+  margin-top:0%;
+}
+.toop{
+  font-family: 'Sawarabi Gothic', cursive;
+  font-size: 20px;
+  padding-top:3%;
+  padding-left: 10%;
+}
+.menu1{
+  font-family: 'Staatliches', cursive;
+  font-size: 50px;
+}
+.Jua{
+  font-family: 'Jua', cursive;
+}
+.square{
+  margin-top:5%;
+  width: 450px;
+  height: 160px;
+  box-shadow: 5px 5px 5px #aaa;
+  background-color: #f0f0f0;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.square1{
+  margin-top:5%;
+  width: 450px;
+  height: 160px;
+  box-shadow: 5px 5px 5px #aaa;
+  background-color: #f0f0f0;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.square2{
+  margin-top:2%;
+  width: 450px;
+  height: 160px;
+  box-shadow: 5px 5px 5px #aaa;
+  background-color: #f0f0f0;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.square3{
+  margin-top:2%;
+  width: 450px;
+  height: 160px;
+  box-shadow: 5px 5px 5px #aaa;
+  background-color: #f0f0f0;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+@media(max-width:800px){
+  #plate{
+    display:none;
+  }
+  .square{
+    height: 140px;
+    margin-top:5%
+  }
+  .square1{
+    height: 140px;
+    margin-top:5%
+  }
+  .square2{
+    height: 140px;
+    margin-top:5%
+  }
+  .square3{
+    height: 140px;
+    margin-top:5%
+  }
+}
+.pic1{
+  margin-left: 250px;
+}
+.pic2{
+  margin-right: 250px;
+}
+@media(max-width:1122px){
+  .pic1{
+    margin-left: 50px;
+  }
+  .pic2{
+    margin-right: 50px;
+  }
+  header .nav a span{
+    font-size:15px;
+  }
+  header .nav > span{
+    position: absolute; height:3px;
+    background: lightskyblue; left:0; bottom:0; width: 100px;
+    opacity: 0;
+    transition: all .5s;
+  }
+  header .nav a:nth-child(1).on ~ span{
+    left:0; opacity: 1;
+  }
+  header .nav a:nth-child(2).on ~ span{
+    left:100px; opacity: 1;
+  }
+  header .nav a:nth-child(3).on ~ span{
+    left:200px; opacity: 1;
+  }
+  header .nav a:nth-child(4).on ~ span{
+    left:300px; opacity: 1;
+  }
+  header .nav a:nth-child(5).on ~ span{
+    left:400px; opacity: 1;
+  }
+  header .nav{
+    width:500px;
+  }
+
+}
+@media(max-width:602px){
+  .pic1, .pic2{
+    margin: 0;
+  }
+  .pic1 img{
+    width:78px;
+    height:100px;
+  }
+  .pic2 img{
+    height:100px;
+  }
+  .pic1 h2, .pic2 h2{
+    font-size:15px;
+  }
+}
+@media(max-width:560px){
+  header .nav{
+    display:none;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+  .premier{
+    width:80%;
+  }
+  .topdiv{
+    height:70px;
+  }
+  nav{
+    display: flex;
+  }
+}
+@media(max-width:767px){
+  header{
+    justify-content: space-around;
+  }
+}
+@media(min-width:559px){
+  header strong{
+    display:none;
+  }
+}
+#health{
+  font-family: "Staatliches",cursive;
+  font-size: 40px;
+}
+#num{
+  font-family: "Staatliches",cursive;
+  font-size:40px;
+}
+
+@font-face{
+    font-family: 'pastpicture2';
+    src: url(../font/a옛날사진관2.ttf);
+  }
+  @font-face{
+      font-family: 'pastpicture3';
+      src: url(../font/a옛날사진관3.ttf);
+    }
+@font-face{
+    font-family: 'pastpicture4';
+    src: url(../font/a옛날사진관4.ttf);
+}
+@font-face{
+    font-family: 'baekgoo';
+    src: url(../font/a시월구일1.ttf);
+}
+.title{
+  font-family: "pastpicture3",cursive;
+}
+.sogae{
+  font-family: "pastpicture2",cursive;
+}
